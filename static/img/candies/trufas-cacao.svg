@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Trufas Cacao">
+  <rect width="600" height="600" fill="#f7d4c8"/>
+  <ellipse cx="230" cy="340" rx="110" ry="95" fill="#4b2d24"/>
+  <ellipse cx="330" cy="290" rx="110" ry="95" fill="#6b3d2c"/>
+  <ellipse cx="400" cy="380" rx="110" ry="95" fill="#2f1d16"/>
+  <g fill="#7c4a34" opacity="0.55">
+    <circle cx="248" cy="310" r="18"/>
+    <circle cx="312" cy="260" r="16"/>
+    <circle cx="368" cy="360" r="15"/>
+  </g>
+</svg>

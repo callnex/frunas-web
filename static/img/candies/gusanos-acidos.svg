@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Gusanos Acidos">
+  <rect width="600" height="600" fill="#fce7dc"/>
+  <g fill="none" stroke-linecap="round" stroke-width="46">
+    <path d="M120 355c80-90 180-110 356-48" stroke="#6ee7b7"/>
+    <path d="M160 410c110-90 205-92 286-40" stroke="#fb7185"/>
+    <path d="M112 275c90-68 215-78 348-24" stroke="#84cc16"/>
+  </g>
+  <g fill="#fef08a" opacity="0.55">
+    <circle cx="150" cy="350" r="12"/>
+    <circle cx="240" cy="320" r="12"/>
+    <circle cx="310" cy="370" r="12"/>
+    <circle cx="420" cy="285" r="12"/>
+    <circle cx="500" cy="330" r="12"/>
+  </g>
+</svg>

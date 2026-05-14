@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Paleta y dulces">
+  <rect width="900" height="1100" fill="#ffc7db"/>
+  <circle cx="450" cy="560" r="230" fill="#fff2f7"/>
+  <path d="M450 330c127 0 230 103 230 230S577 790 450 790 220 687 220 560s103-230 230-230z" fill="none" stroke="#ff6aa3" stroke-width="38"/>
+  <path d="M450 375c102 0 185 83 185 185S552 745 450 745 265 662 265 560s83-185 185-185z" fill="none" stroke="#ffb347" stroke-width="34"/>
+  <path d="M450 425c75 0 135 60 135 135s-60 135-135 135-135-60-135-135 60-135 135-135z" fill="none" stroke="#ff6aa3" stroke-width="28"/>
+  <rect x="433" y="760" width="34" height="280" rx="17" fill="#fff8f0"/>
+  <g fill="#ff8db5" opacity="0.95">
+    <circle cx="140" cy="140" r="44"/>
+    <circle cx="760" cy="180" r="38"/>
+    <circle cx="730" cy="910" r="42"/>
+    <circle cx="180" cy="890" r="54"/>
+  </g>
+  <g fill="#8dd0ff" opacity="0.95">
+    <circle cx="150" cy="720" r="48"/>
+    <circle cx="710" cy="760" r="36"/>
+  </g>
+  <g fill="#a3e635" opacity="0.85">
+    <circle cx="255" cy="270" r="32"/>
+    <circle cx="620" cy="345" r="28"/>
+  </g>
+</svg>

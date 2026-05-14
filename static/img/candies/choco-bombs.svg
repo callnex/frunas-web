@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Choco Bombs">
+  <rect width="600" height="600" fill="#f8ded3"/>
+  <g>
+    <circle cx="188" cy="340" r="96" fill="#4a2c24"/>
+    <circle cx="310" cy="268" r="104" fill="#6d3c2f"/>
+    <circle cx="410" cy="362" r="98" fill="#2a1a16"/>
+    <circle cx="170" cy="320" r="16" fill="#7e4f3b" opacity="0.45"/>
+    <circle cx="286" cy="240" r="18" fill="#9a5d43" opacity="0.4"/>
+    <circle cx="390" cy="332" r="14" fill="#6c4335" opacity="0.42"/>
+  </g>
+</svg>

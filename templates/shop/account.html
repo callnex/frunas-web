@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Mi Cuenta | FRUNAS{% endblock %}
+
+{% block content %}
+<section class="account-shell">
+    <div class="account-summary">
+        <p class="eyebrow">Mi perfil</p>
+        <h1>Mi Cuenta</h1>
+        <div class="profile-grid">
+            <div class="profile-card">
+                <span>Nombre</span>
+                <strong>{{ request.user.first_name|default:'Sin nombre' }}</strong>
+            </div>
+            <div class="profile-card">
+                <span>Usuario</span>
+                <strong>{{ request.user.username }}</strong>
+            </div>
+            <div class="profile-card">
+                <span>Correo</span>
+                <strong>{{ request.user.email }}</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="history-card">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+            <div>
+                <p class="eyebrow">Historial</p>
+                <h2>Tus compras</h2>
+            </div>
+            <a class="btn back-store-btn" href="{% url 'store' %}">Seguir comprando</a>
+        </div>
+
+        {% if orders %}
+        <div class="order-list">
+            {% for order in orders %}
+            <article class="order-row">
+                <div>
+                    <h3>Compra del {{ order.created_at|date:'d/m/Y H:i' }}</h3>
+                    <p>{{ order.items.count }} producto{{ order.items.count|pluralize:'s' }}</p>
+                </div>
+                <div class="order-actions">
+                    <strong>${{ order.total_amount }}</strong>
+                    <a href="{% url 'order_detail' order.pk %}">Ver detalle</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-card">Aun no tienes compras registradas.</div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

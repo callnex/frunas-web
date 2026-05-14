@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Detalle de compra | FRUNAS{% endblock %}
+
+{% block content %}
+<section class="order-shell">
+    <div class="order-hero compact-hero">
+        <div>
+            <p class="eyebrow">Detalle</p>
+            <h1>Resumen de tu compra</h1>
+            <p class="section-copy">AquÍ puedes revisar los productos registrados en esta compra.</p>
+        </div>
+        <a class="btn back-store-btn" href="{% url 'account' %}">Volver a Mi Cuenta</a>
+    </div>
+
+    <div class="receipt-card">
+        <div class="receipt-meta">
+            <span>Fecha</span>
+            <strong>{{ order.created_at|date:'d/m/Y H:i' }}</strong>
+        </div>
+        <div class="receipt-items">
+            {% for item in order.items.all %}
+            <article class="receipt-item">
+                <div class="receipt-thumb">
+                    <img src="{% static item.candy.image_path %}" alt="{{ item.product_name }}">
+                </div>
+                <div class="receipt-copy">
+                    <h2>{{ item.product_name }}</h2>
+                    <p>Cantidad: {{ item.quantity }}</p>
+                    <p>Precio unitario: ${{ item.unit_price }}</p>
+                </div>
+                <strong>${{ item.line_total }}</strong>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="receipt-total">
+            <span>Total pagado</span>
+            <strong>${{ order.total_amount }}</strong>
+        </div>
+    </div>
+</section>
+{% endblock %}

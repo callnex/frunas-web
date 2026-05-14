@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Caramelos Frutales">
+  <rect width="600" height="600" fill="#e4f4ff"/>
+  <g>
+    <circle cx="165" cy="220" r="72" fill="#ff8a65"/>
+    <rect x="115" y="210" width="100" height="20" fill="#ffd8cc"/>
+    <circle cx="320" cy="300" r="82" fill="#f472b6"/>
+    <rect x="265" y="290" width="110" height="20" fill="#ffe0ef"/>
+    <circle cx="455" cy="205" r="66" fill="#22c55e"/>
+    <rect x="410" y="195" width="90" height="20" fill="#d9ffe5"/>
+    <circle cx="230" cy="430" r="70" fill="#38bdf8"/>
+    <rect x="182" y="420" width="96" height="20" fill="#dcf5ff"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+Hola {{ user.first_name|default:user.username }},
+
+Gracias por registrarte en FRUNAS!!!.
+
+Para activar tu cuenta, haz clic en este enlace:
+{{ activation_url }}
+
+Si no creaste esta cuenta, puedes ignorar este mensaje.
+
+Parchesee

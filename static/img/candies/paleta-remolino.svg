@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Paleta Remolino">
+  <rect width="600" height="600" fill="#ffd6e7"/>
+  <rect x="287" y="360" width="26" height="180" rx="13" fill="#f5f0ea"/>
+  <circle cx="300" cy="250" r="145" fill="#fff7fa"/>
+  <path d="M300 105a145 145 0 0 1 111 240c-26 31-65 50-111 50-80 0-145-65-145-145 0-46 19-85 49-111a145 145 0 0 1 96-34z" fill="none" stroke="#ff5aa5" stroke-width="24"/>
+  <path d="M300 136c63 0 114 51 114 114s-51 114-114 114-114-51-114-114 51-114 114-114z" fill="none" stroke="#ffb347" stroke-width="24"/>
+  <path d="M300 168c45 0 82 37 82 82s-37 82-82 82-82-37-82-82 37-82 82-82z" fill="none" stroke="#ff5aa5" stroke-width="22"/>
+  <path d="M300 205c25 0 45 20 45 45s-20 45-45 45-45-20-45-45 20-45 45-45z" fill="none" stroke="#7dd3fc" stroke-width="18"/>
+</svg>

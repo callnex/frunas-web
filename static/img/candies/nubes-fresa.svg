@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Nubes de Fresa">
+  <rect width="600" height="600" fill="#ffe8f2"/>
+  <g>
+    <rect x="95" y="275" width="110" height="110" rx="24" fill="#ff7fa5"/>
+    <rect x="180" y="200" width="130" height="130" rx="26" fill="#fff4f7"/>
+    <rect x="285" y="270" width="120" height="120" rx="25" fill="#ffbdd0"/>
+    <rect x="390" y="195" width="110" height="110" rx="24" fill="#fff4f7"/>
+  </g>
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="210" cy="230" r="18"/>
+    <circle cx="430" cy="225" r="14"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Bastones de Menta">
+  <rect width="600" height="600" fill="#e9f6ff"/>
+  <g transform="rotate(-18 300 300)">
+    <rect x="205" y="95" width="78" height="340" rx="39" fill="#ffffff"/>
+    <rect x="317" y="120" width="78" height="340" rx="39" fill="#ffffff"/>
+    <path d="M205 150h78v45h-78zM205 240h78v45h-78zM205 330h78v45h-78z" fill="#ef476f"/>
+    <path d="M317 175h78v45h-78zM317 265h78v45h-78zM317 355h78v45h-78z" fill="#06d6a0"/>
+    <path d="M203 85c0-40 32-72 72-72s72 32 72 72v56h-50V85c0-12-10-22-22-22s-22 10-22 22v56h-50z" fill="#ffffff"/>
+  </g>
+</svg>

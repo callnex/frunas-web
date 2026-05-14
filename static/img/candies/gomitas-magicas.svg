@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Gomitas Magicas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#fca5a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <g opacity="0.95">
+    <path d="M155 220c0-42 30-69 69-69s69 27 69 69v80c0 43-30 70-69 70s-69-27-69-70z" fill="#ff5d8f"/>
+    <circle cx="224" cy="197" r="30" fill="#ff9fcb"/>
+    <circle cx="200" cy="227" r="12" fill="#fff4b4"/>
+    <path d="M314 300c0-36 25-59 57-59s57 23 57 59v66c0 37-25 60-57 60s-57-23-57-60z" fill="#ffd24d"/>
+    <circle cx="371" cy="280" r="24" fill="#ffe98a"/>
+    <path d="M84 332c0-30 22-49 49-49s49 19 49 49v56c0 31-22 50-49 50s-49-19-49-50z" fill="#4fd1c5"/>
+    <circle cx="133" cy="315" r="18" fill="#a7f3d0"/>
+    <path d="M394 143c0-25 18-41 40-41s40 16 40 41v46c0 25-18 41-40 41s-40-16-40-41z" fill="#ff8a65"/>
+  </g>
+</svg>

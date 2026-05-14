@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Compra confirmada | FRUNAS{% endblock %}
+
+{% block content %}
+<section class="order-shell">
+    <div class="order-hero simple-hero">
+        <div class="hero-copy">
+            <p class="eyebrow">Compra confirmada</p>
+            <h1>Gracias por tu compra</h1>
+            <p class="section-copy">Tu pedido fue registrado y el inventario ya se actualizÓ correctamente.</p>
+        </div>
+    </div>
+
+    <div class="receipt-card">
+        <h2>Resumen de pedido</h2>
+        <div class="receipt-items">
+            {% for item in order.items.all %}
+            <article class="receipt-item">
+                <div class="receipt-thumb">
+                    <img src="{% static item.candy.image_path %}" alt="{{ item.product_name }}">
+                </div>
+                <div class="receipt-copy">
+                    <h3>{{ item.product_name }}</h3>
+                    <p>Cantidad: {{ item.quantity }}</p>
+                </div>
+                <strong>${{ item.line_total }}</strong>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="receipt-total">
+            <span>Total pagado</span>
+            <strong>${{ order.total_amount }}</strong>
+        </div>
+        <div class="receipt-actions">
+            <a class="btn auth-submit" href="{% url 'store' %}">Volver a la Tiendita</a>
+            <a class="btn btn-link sugar-link-btn" href="{% url 'order_detail' order.pk %}">Ver detalle de compra</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    window.localStorage.removeItem('sugar_rush_cart');
+</script>
+{% endblock %}

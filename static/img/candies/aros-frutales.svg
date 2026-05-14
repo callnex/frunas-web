@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Aros Frutales">
+  <rect width="600" height="600" fill="#e8f5ff"/>
+  <g fill="none" stroke-linecap="round" stroke-width="34">
+    <circle cx="220" cy="240" r="88" stroke="#ff7f50"/>
+    <circle cx="380" cy="248" r="88" stroke="#58cced"/>
+    <circle cx="286" cy="360" r="88" stroke="#f15bb5"/>
+    <circle cx="430" cy="388" r="76" stroke="#70e000"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Paleta de registro">
+  <rect width="900" height="1100" fill="#ffd3df"/>
+  <rect x="430" y="350" width="40" height="520" rx="20" fill="#fffaf2"/>
+  <circle cx="450" cy="420" r="250" fill="#fff6fa"/>
+  <path d="M450 170c138 0 250 112 250 250S588 670 450 670 200 558 200 420s112-250 250-250z" fill="none" stroke="#ff8552" stroke-width="40"/>
+  <path d="M450 230c105 0 190 85 190 190S555 610 450 610 260 525 260 420s85-190 190-190z" fill="none" stroke="#ff4f8a" stroke-width="34"/>
+  <path d="M450 290c72 0 130 58 130 130S522 550 450 550 320 492 320 420s58-130 130-130z" fill="none" stroke="#ffb347" stroke-width="28"/>
+  <g fill="#f59e0b" opacity="0.92">
+    <circle cx="130" cy="140" r="36"/>
+    <circle cx="690" cy="140" r="34"/>
+    <circle cx="760" cy="930" r="42"/>
+  </g>
+  <g fill="#22c55e" opacity="0.88">
+    <circle cx="170" cy="930" r="42"/>
+    <circle cx="700" cy="800" r="32"/>
+  </g>
+  <g fill="#7c3aed" opacity="0.82">
+    <circle cx="250" cy="180" r="30"/>
+  </g>
+</svg>

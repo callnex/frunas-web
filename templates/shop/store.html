@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Tienda | FRUNAS{% endblock %}
+
+{% block content %}
+<section class="store-layout">
+    <div class="store-header-row">
+        <div>
+            <p class="eyebrow">Coleccion destacada</p>
+            <h1 class="section-title">Dulces Disponibles</h1>
+            <p class="section-copy">Busca tus favoritos, ajusta cantidades y confirma tu compra en un solo paso.</p>
+        </div>
+    </div>
+
+    <div class="row g-4 align-items-start">
+        <div class="col-xl-8">
+            <div class="row g-4">
+                {% for candy in candies %}
+                <div class="col-md-6 col-xl-4">
+                    <article
+                        class="candy-card {% if candy.is_sold_out %}sold-out{% endif %}"
+                        data-candy-id="{{ candy.id }}"
+                        data-candy-name="{{ candy.name }}"
+                        data-candy-price="{{ candy.price|stringformat:'s' }}"
+                        data-candy-stock="{{ candy.stock }}"
+                    >
+                        <div class="candy-media">
+                            <img src="{% static candy.image_path %}" alt="{{ candy.name }}">
+                        </div>
+                        <div class="candy-body">
+                            <h2>{{ candy.name }}</h2>
+                            <div class="price-row">${{ candy.price }}</div>
+                            <div class="quantity-selector">
+                                <button type="button" class="qty-btn decrement" {% if candy.is_sold_out %}disabled{% endif %}>-</button>
+                                <span class="qty-value">0</span>
+                                <button type="button" class="qty-btn increment" {% if candy.is_sold_out %}disabled{% endif %}>+</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="empty-card">No hay dulces disponibles en este momento.</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <aside class="summary-card sticky-xl-top">
+                <div class="summary-header">
+                    <h2>Resumen de Compra</h2>
+                    <p>Tu carrito se actualiza en tiempo real UWU.</p>
+                </div>
+                <div class="summary-items" id="summaryItems">
+                    <div class="summary-empty" id="summaryEmpty">Todavía no has seleccionado dulces.</div>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="summaryTotal">$0,00</strong>
+                </div>
+                <form method="post" action="{% url 'checkout' %}" id="checkoutForm">
+                    {% csrf_token %}
+                    <input type="hidden" name="cart_data" id="cartDataInput">
+                    <button type="submit" class="btn confirm-btn">Confirmar compra</button>
+                </form>
+                <p class="summary-help">
+                    {% if request.user.is_authenticated %}
+                    El inventario se actualizara al confirmar.
+                    {% else %}
+                    Si confirmas, te llevaremos a iniciar sesion.
+                    {% endif %}
+                </p>
+            </aside>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/store.js' %}"></script>
+{% endblock %}
